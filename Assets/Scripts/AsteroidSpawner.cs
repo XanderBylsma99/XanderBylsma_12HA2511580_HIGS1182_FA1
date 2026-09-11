@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class AsteroidSpawner : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class AsteroidSpawner : MonoBehaviour
         for (int i = 0; i < asteroid_bigCount; i++)
         {
             int index = Random.Range(minInclusive: 0, spawnPoint.Length);
-            Instantiate(asteroid_bigPrefab, spawnPoint[index].position, spawnPoint[index].rotation);
+            Instantiate(asteroid_bigPrefab, spawnPoint[index].position, spawnPoint[index].rotation); //Spawner big asteroid
             Debug.Log("Big Asteroids Spawned");
         }
 
@@ -29,7 +30,7 @@ public class AsteroidSpawner : MonoBehaviour
         for (int i = 0; i < asteroid_meduimCount; i++)
         {
             int index = Random.Range(minInclusive: 0, spawnPoint.Length);
-            Instantiate(asteroid_meduimPrefab, spawnPoint[index].position, spawnPoint[index].rotation);
+            Instantiate(asteroid_meduimPrefab, spawnPoint[index].position, spawnPoint[index].rotation); // spawns meduim asteroids
             Debug.Log("Meduim Asteroids Spawned");
         }
     }

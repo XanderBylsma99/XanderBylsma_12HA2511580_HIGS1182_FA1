@@ -21,7 +21,7 @@ public class Collectible : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
-            ScoreManager.scoreCount += 1;
+            ScoreManager.scoreCount += 1; // destroys collectible and adds to score count
             Debug.Log("Fuel Collected");
             GameManager.Instance.WinGame();
         }

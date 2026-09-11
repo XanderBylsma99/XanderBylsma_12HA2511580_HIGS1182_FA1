@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-
+    //different scenes
     public void MaiMenu()
     {
         Debug.Log("Going to Menu");

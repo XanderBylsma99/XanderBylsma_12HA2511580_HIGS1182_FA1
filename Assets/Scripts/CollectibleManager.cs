@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.VFX;
 public class CollectibleManager : MonoBehaviour
 {
     public GameObject collectiblePrefab;
@@ -25,7 +26,7 @@ public class CollectibleManager : MonoBehaviour
         
         {
             int index = Random.Range(minInclusive:0, spawnPoint.Length);
-            Instantiate(collectiblePrefab, spawnPoint[index].position, spawnPoint[index].rotation);
+            Instantiate(collectiblePrefab, spawnPoint[index].position, spawnPoint[index].rotation); //spawns collectible objects
             Debug.Log("Feul Spawned");
         }
 
